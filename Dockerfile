@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM ubuntu/trusty64
+FROM ubuntu:14.04
 
 # Install MySQL.
 RUN \
