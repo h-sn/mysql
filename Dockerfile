@@ -10,7 +10,7 @@ FROM dockerfile/ubuntu
 # Install MySQL.
 RUN \
   apt-get update && \
-  DEBIAN_FRONTEND=noninteractive apt-get install -y mysql-server && \
+  DEBIAN_FRONTEND=noninteractive apt-get install -y mysql-server-5.6 && \
   rm -rf /var/lib/apt/lists/* && \
   sed -i 's/^\(bind-address\s.*\)/# \1/' /etc/mysql/my.cnf && \
   sed -i 's/^\(log_error\s.*\)/# \1/' /etc/mysql/my.cnf && \
