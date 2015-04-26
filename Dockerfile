@@ -9,7 +9,6 @@ FROM dockerfile/ubuntu
 
 # Install MySQL.
 RUN \
-  sudo su && \
   apt-get update && \
   DEBIAN_FRONTEND=noninteractive apt-get install -y mysql-server && \
   rm -rf /var/lib/apt/lists/* && \
